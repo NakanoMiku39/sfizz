@@ -59,6 +59,10 @@
 #define PLATFORM_ASMJS 1
 #define PLATFORM_CLANG_ASMJS 1
 #define PLATFORM_GCC_COMPATIBLE_ASMJS 1
+#elif defined(__loongarch__)
+#define PLATFORM_LOONG64 1
+#define PLATFORM_CLANG_LOONG64 1
+#define PLATFORM_GCC_COMPATIBLE_LOONG64 1
 #endif
 #elif defined(__GNUC__)
 #define PLATFORM_GCC 1
@@ -75,6 +79,10 @@
 #define PLATFORM_MIPS 1
 #define PLATFORM_GCC_MIPS 1
 #define PLATFORM_GCC_COMPATIBLE_MIPS 1
+#elif defined(__loongarch__)
+#define PLATFORM_LOONG64 1
+#define PLATFORM_GCC_LOONG64 1
+#define PLATFORM_GCC_COMPATIBLE_LOONG64 1
 #endif
 #elif defined(_MSC_VER)
 #define PLATFORM_MSVC 1
